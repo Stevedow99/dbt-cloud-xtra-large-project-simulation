@@ -1,0 +1,9 @@
+version: 2 
+ 
+sources:
+  - name: subscription_data
+    database: steve_d_raw_data
+    tables:
+      - name: account
+      - name: order_product
+      - name: product

@@ -1,0 +1,8 @@
+version: 2 
+ 
+sources:
+  - name: sample_customer_data
+    database: steve_d_raw_data
+    tables:
+      - name: customer_dim
+      - name: purchases_fct

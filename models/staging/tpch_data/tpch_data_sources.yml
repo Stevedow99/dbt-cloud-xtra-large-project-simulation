@@ -1,0 +1,14 @@
+version: 2 
+ 
+sources:
+  - name: tpch_data
+    database: steve_d_raw_data
+    tables:
+      - name: customer
+      - name: lineitem
+      - name: nation
+      - name: orders
+      - name: part
+      - name: partsupp
+      - name: region
+      - name: supplier

@@ -1,0 +1,11 @@
+version: 2 
+ 
+sources:
+  - name: medicare_sample_data
+    database: steve_d_raw_data
+    tables:
+      - name: medicare_samples__2008_beneficiary_summary_file_sample
+      - name: medicare_samples__2008_to_2010_inpatient_claims_sample
+      - name: medicare_samples__2008_to_2010_outpatient_claims_sample
+      - name: medicare_samples__2009_beneficiary_summary_file_sample
+      - name: medicare_samples__2010_beneficiary_summary_file_sample

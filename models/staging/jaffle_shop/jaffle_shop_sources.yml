@@ -1,0 +1,10 @@
+version: 2 
+ 
+sources:
+  - name: jaffle_shop
+    database: steve_d_raw_data
+    tables:
+      - name: customers
+      - name: dim_customers
+      - name: fct_orders
+      - name: orders

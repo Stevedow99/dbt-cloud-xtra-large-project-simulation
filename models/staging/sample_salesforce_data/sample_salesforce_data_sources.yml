@@ -1,0 +1,10 @@
+version: 2 
+ 
+sources:
+  - name: sample_salesforce_data
+    database: steve_d_raw_data
+    tables:
+      - name: accounts
+      - name: contacts
+      - name: leads
+      - name: opportunites
