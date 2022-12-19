@@ -1,7 +1,17 @@
 with model_a as
-  (select *
-   from {{ ref('rollup__model_forty_eight') }})
-select * exclude unqiue_key,
+  (select * exclude unqiue_key,
+            unqiue_key as model_a_unqiue_key
+   from {{ ref('rollup__model_two_hundred_and_eighty') }}),
+     model_b as
+  (select * exclude unqiue_key,
+            unqiue_key as model_b_unqiue_key
+   from {{ ref('rollup__model_two_hundred_and_twenty_one') }}),
+     joined_models as
+  (select a.*,
+          b.*
+   from model_a a
+   inner join model_b b on a.model_a_unqiue_key = b.model_b_unqiue_key)
+select * exclude (model_a_unqiue_key, model_b_unqiue_key),
          row_number() over (partition by 1
                             order by 1) as unqiue_key
-from model_a
+from joined_models
