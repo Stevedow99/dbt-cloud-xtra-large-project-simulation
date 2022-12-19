@@ -16,7 +16,8 @@ renamed as (
         o_orderpriority,
         o_clerk,
         o_shippriority,
-        o_comment
+        o_comment,
+        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

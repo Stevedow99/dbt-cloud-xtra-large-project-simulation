@@ -39,7 +39,8 @@ renamed as (
         pppymt_op,
         medreimb_car,
         benres_car,
-        pppymt_car
+        pppymt_car,
+        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

@@ -15,7 +15,8 @@ renamed as (
         c_phone,
         c_acctbal,
         c_mktsegment,
-        c_comment
+        c_comment,
+        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

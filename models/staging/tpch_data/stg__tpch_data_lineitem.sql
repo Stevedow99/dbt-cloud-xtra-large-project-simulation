@@ -23,7 +23,8 @@ renamed as (
         l_receiptdate,
         l_shipinstruct,
         l_shipmode,
-        l_comment
+        l_comment,
+        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

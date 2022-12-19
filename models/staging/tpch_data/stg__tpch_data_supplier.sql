@@ -14,7 +14,8 @@ renamed as (
         s_nationkey,
         s_phone,
         s_acctbal,
-        s_comment
+        s_comment,
+        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

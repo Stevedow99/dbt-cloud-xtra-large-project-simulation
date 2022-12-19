@@ -16,7 +16,8 @@ renamed as (
         country,
         contactid,
         datecreated,
-        modifieddate
+        modifieddate,
+        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

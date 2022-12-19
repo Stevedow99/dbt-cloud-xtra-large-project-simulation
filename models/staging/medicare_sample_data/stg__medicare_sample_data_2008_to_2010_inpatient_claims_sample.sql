@@ -88,7 +88,8 @@ renamed as (
         hcpcs_cd_42,
         hcpcs_cd_43,
         hcpcs_cd_44,
-        hcpcs_cd_45
+        hcpcs_cd_45,
+        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

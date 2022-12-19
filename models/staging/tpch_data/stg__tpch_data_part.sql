@@ -16,7 +16,8 @@ renamed as (
         p_size,
         p_container,
         p_retailprice,
-        p_comment
+        p_comment,
+        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

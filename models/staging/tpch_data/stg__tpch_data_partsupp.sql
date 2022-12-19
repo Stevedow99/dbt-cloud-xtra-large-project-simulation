@@ -12,7 +12,8 @@ renamed as (
         ps_suppkey,
         ps_availqty,
         ps_supplycost,
-        ps_comment
+        ps_comment,
+        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 
