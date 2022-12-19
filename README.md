@@ -16,6 +16,6 @@
     - _Roll Up Models_
         - 326 models
     - _Dashboard Connected Models_
-        - 326 models
+        - 651 models
 
-### Total Models in Project: 1,984
+### Total Models in Project: 2,309
