@@ -9,7 +9,7 @@ with model_a as
      model_c as
   (select * exclude unqiue_key,
             unqiue_key as model_c_unqiue_key
-   from {{ ref('rollup__model_one_hundred_and_twenty_eight.sql') }}),
+   from {{ ref('rollup__model_one_hundred_and_twenty_eight') }}),
      joined_models as
   (select a.*,
           b.*,
