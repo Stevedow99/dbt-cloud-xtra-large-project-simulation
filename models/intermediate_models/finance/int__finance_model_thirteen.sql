@@ -1,15 +1,15 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from stg__subscription_data_product),
+   from {{ ref('stg__jaffle_shop_dim_customers') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from stg__tpch_data_region),
+   from {{ ref('stg__subscription_data_product') }}),
      model_c as
   (select * exclude unqiue_key,
             unqiue_key as model_c_unqiue_key
-   from stg__leads),
+   from {{ ref('stg__jaffle_shop_fct_orders') }}),
      joined_models as
   (select a.*,
           b.*,

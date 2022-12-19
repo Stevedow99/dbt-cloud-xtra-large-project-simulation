@@ -1,11 +1,11 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from stg__contacts),
+   from {{ ref('{{ ref('stg__medicare_sample_data_2008_to_2010_outpatient_claims_sample') }}') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from stg__jaffle_shop_dim_customers),
+   from {{ ref('{{ ref('stg__opportunites') }}') }}),
      joined_models as
   (select a.*,
           b.*

@@ -1,6 +1,6 @@
 with model_a as
   (select *
-   from stg__medicare_sample_data_2008_to_2010_outpatient_claims_sample)
+   from {{ ref('stg__tpch_data_customer') }})
 select * exclude unqiue_key,
          row_number() over (partition by 1
                             order by 1) as unqiue_key
