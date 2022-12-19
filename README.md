@@ -5,17 +5,17 @@
 
 ### Currently there are the following assets in this project
 - **Sources**
-    - 7 sources with a combined 31 datasets 
+    - 27 sources
 - **Models**
     - _Staging_
-        - 31 models
+        - 28 models
     - _Intermediate Models_
-        - 1,050 models
+        - 978 models
     - _Core Reporting Models_
-        - 325 models
+        - 326 models
     - _Roll Up Models_
-        - 325 models
+        - 326 models
     - _Dashboard Connected Models_
-        - 325 models
+        - 326 models
 
-### Total Models in Project: 2,056
+### Total Models in Project: 1,984
