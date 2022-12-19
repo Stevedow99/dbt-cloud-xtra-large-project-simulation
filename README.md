@@ -1,15 +1,21 @@
-Welcome to your new dbt project!
+# Welcome to the dbt Cloud large Project Simulation 
 
-### Using the starter project
+## The purpose of this project is to simulation an extremely large monorepo implementation in dbt Cloud
+</br>
 
-Try running the following commands:
-- dbt run
-- dbt test
+### Currently there are the following assets in this project
+- **Sources**
+    - 7 sources with a combined 31 datasets 
+- **Models**
+    - _Staging_
+        - 31 models
+    - _Intermediate Models_
+        - 1,050 models
+    - _Core Reporting Models_
+        - 325 models
+    - _Roll Up Models_
+        - 325 models
+    - _Dashboard Connected Models_
+        - 325 models
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+### Total Models in Project: 2,056
