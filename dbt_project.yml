@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'large_project_simulation'
+name: 'xtra_large_project_simulation'
 version: '1.3.1'
 config-version: 2
 
