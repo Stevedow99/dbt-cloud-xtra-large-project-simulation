@@ -1,15 +1,15 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from {{ ref('stg__stripe_payment') }}),
+   from {{ ref('stg__tpch_data_partsupp') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from {{ ref('stg__tpch_data_partsupp') }}),
+   from {{ ref('stg__tpch_data_lineitem') }}),
      model_c as
   (select * exclude unqiue_key,
             unqiue_key as model_c_unqiue_key
-   from {{ ref('stg__subscription_data_order_product') }}),
+   from {{ ref('stg__sample_salesforce_data_accounts') }}),
      joined_models as
   (select a.*,
           b.*,

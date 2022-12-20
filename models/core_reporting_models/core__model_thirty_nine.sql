@@ -1,6 +1,6 @@
 with model_a as
   (select *
-   from {{ ref('int__marketing_model_one_hundred_and_twenty_six') }})
+   from {{ ref('int__finance_model_five_hundred_and_fifty_five') }})
 select * exclude unqiue_key,
          row_number() over (partition by 1
                             order by 1) as unqiue_key

@@ -1,15 +1,15 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from {{ ref('rollup__model_two_hundred_and_ninety_five') }}),
+   from {{ ref('rollup__model_eight_hundred_and_eighty_four') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from {{ ref('rollup__model_one_hundred_and_four') }}),
+   from {{ ref('rollup__model_one_thousand,_four_hundred_and_ninety_five') }}),
      model_c as
   (select * exclude unqiue_key,
             unqiue_key as model_c_unqiue_key
-   from {{ ref('rollup__model_two_hundred_and_sixty_nine') }}),
+   from {{ ref('rollup__model_four_hundred_and_fifty_seven') }}),
      joined_models as
   (select a.*,
           b.*,

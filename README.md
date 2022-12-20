@@ -10,12 +10,12 @@
     - _Staging_
         - 28 models
     - _Intermediate Models_
-        - 978 models
+        - 3003 models
     - _Core Reporting Models_
-        - 326 models
+        - 1001 models
     - _Roll Up Models_
-        - 326 models
+        - 1501 models
     - _Dashboard Connected Models_
-        - 651 models
+        - 1501 models
 
-### Total Models in Project: 2,309
+### Total Models in Project: 7034

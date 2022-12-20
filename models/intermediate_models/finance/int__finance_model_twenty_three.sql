@@ -1,15 +1,15 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from {{ ref('stg__tpch_data_region') }}),
+   from {{ ref('stg__sample_salesforce_data_leads') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from {{ ref('stg__medicare_sample_data_2008_to_2010_outpatient_claims_sample') }}),
+   from {{ ref('stg__tpch_data_nation') }}),
      model_c as
   (select * exclude unqiue_key,
             unqiue_key as model_c_unqiue_key
-   from {{ ref('stg__subscription_data_account') }}),
+   from {{ ref('stg__medicare_sample_data_2008_to_2010_outpatient_claims_sample') }}),
      joined_models as
   (select a.*,
           b.*,
