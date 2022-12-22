@@ -2,7 +2,7 @@ version: 2
  
 sources:
   - name: tpch_data
-    database: steve_d_raw_data
+    database: LARGE_DBT_CLOUD_PROJECT_RAW_DATA
     tables:
       - name: customer
       - name: lineitem
