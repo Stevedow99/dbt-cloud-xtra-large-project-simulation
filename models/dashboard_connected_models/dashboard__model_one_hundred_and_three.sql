@@ -1,7 +1,7 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from {{ ref('rollup__model_one_thousand,_one_hundred_and_thirty_nine') }}),
+   from {{ ref('rollup__model_one_thousand_one_hundred_and_thirty_nine') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key

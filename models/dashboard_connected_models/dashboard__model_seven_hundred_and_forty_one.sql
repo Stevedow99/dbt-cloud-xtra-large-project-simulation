@@ -5,7 +5,7 @@ with model_a as
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from {{ ref('rollup__model_one_thousand,_three_hundred_and_ninety_nine') }}),
+   from {{ ref('rollup__model_one_thousand_three_hundred_and_ninety_nine') }}),
      joined_models as
   (select a.*,
           b.*
