@@ -3,3 +3,4 @@ target/
 dbt_packages/
 logs/
 python_code/
+dbt_internal_packages/

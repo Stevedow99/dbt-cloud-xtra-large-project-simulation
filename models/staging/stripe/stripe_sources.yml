@@ -2,6 +2,6 @@ version: 2
  
 sources:
   - name: stripe
-    database: LARGE_DBT_CLOUD_PROJECT_RAW_DATA
+    database: STEVE_D_RAW_DATA
     tables:
       - name: payment

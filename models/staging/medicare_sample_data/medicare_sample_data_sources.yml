@@ -2,7 +2,7 @@ version: 2
  
 sources:
   - name: medicare_sample_data
-    database: LARGE_DBT_CLOUD_PROJECT_RAW_DATA
+    database: STEVE_D_RAW_DATA
     tables:
       - name: medicare_samples__2008_beneficiary_summary_file_sample
       - name: medicare_samples__2008_to_2010_inpatient_claims_sample
